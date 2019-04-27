@@ -8,7 +8,7 @@ A1. Kernel or Filter is a small learnable weight matrix (width, height) which ex
     parts of obbject and object. 
 
 
-========================================================================================
+====================================================================================
 
 
 Q2. Why should we only (well mostly) use 3x3 Kernels?
@@ -21,7 +21,7 @@ A2. Kernel is a learnable weight matrix typically of 3x3 dimension. A 3x3 kernel
 * 3x3 kernel provides symmetry axis.
 
 
-========================================================================================
+======================================================================================
 
 
 Q3. How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)
