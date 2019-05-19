@@ -70,6 +70,7 @@ The following architectural basics are building blocks to define DNN architectur
    * It is not applied at output layer, but before output layer.
    
 10. **Image Normalization**
+   *
 
 11. **Position of MaxPooling**
    * Applied after minumum 2-3 convolution layers.
