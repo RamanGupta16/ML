@@ -5,15 +5,15 @@
 * 4th DNN: 99.43% validation accuracy with 9,424 parameters. Added LR scheduler. Most efficient in terms of parameters.
 
 **Archiectural Basics**
-The following architectural basics are building blocks to define DNN architecture. They are applied in order to arrive at network architecture.
+The following architectural basics are building blocks to define DNN architecture. They are applied in order to arrive at network architecture. The network architecture is not an eaxct science but an art which comes by trial-error and experience.
 
 1. **How many layers**: 
   * One input layer
   * Multiple hidden layer: It depends upon:-
-    - Input image complexity
-    - Receptive Field required
-    - Hardware constraints
-    - Trainable parameters
+    - Input image complexity and class variations within input.
+    - Receptive Field required.
+    - Hardware for training and deployment.
+    - Minimum acceptable trainable parameters and hyper parameters.
     - Network Architecture.
   * One Output Layer
 
@@ -21,8 +21,8 @@ The following architectural basics are building blocks to define DNN architectur
    * In CNN neuron is connected only to a local region of the previous layer which is defined as its receptive field. 
      Example for a 3x3 convolution the Receptive Field is 3x3 = 9 neurons of previous layer or in case of input image 
      it is 3x3 =9 pixels.
-   * The *local* receptive field is same as size of kernel, but the *global* receptive field is the cumulative receptive field seen so far. 
-     Thus adding a convolution layer adds to the *global* receptive field.
+   * The *local* receptive field is same as size of kernel, but the *global* receptive field is the cumulative 
+     receptive field seen so far. Thus adding a convolution layer adds to the *global* receptive field.
    * Final global RF may not cover entire image. But it must cover the portion of image required for detection. RF plays
      an important role to determine number of layers and parameters in the network architecture.
 
@@ -58,7 +58,7 @@ The following architectural basics are building blocks to define DNN architectur
 8. **Kernels and how do we decide the number of kernels?**
    * Kernel or feature extractors convolve over the image to extract features.
    * The number of kernel depends upon:-
-     - Complexity of images.
+     - Complexity of images and class variations within input.
      - No. of features required to be extracted.
      - Required edges/gradients, textures, patterns, parts-of-object and object for image detection.
    
