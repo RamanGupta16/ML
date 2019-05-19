@@ -56,12 +56,11 @@ The following architectural basics are building blocks to define DNN architectur
    * It can be changed dynamically per epoch using LR scheduler.
    
 8. **Kernels and how do we decide the number of kernels?**
-   * Kernel or feature extractors convolve over the imae to extract features.
+   * Kernel or feature extractors convolve over the image to extract features.
    * The number of kernel depends upon:-
-     - complexity of images.
+     - Complexity of images.
      - No. of features required to be extracted.
      - Required edges/gradients, textures, patterns, parts-of-object and object for image detection.
-     - GPU Memory on which to train the model.
    
 9. **Batch Normalization**
    * Normalization of channels to bring them in range [-1 to 1 ]
@@ -139,4 +138,8 @@ The following architectural basics are building blocks to define DNN architectur
    * These are common Gradient descent optimization algorithms.
    * These algorithms minimize the loss function by finding its minima. 
    
-25. **
+25. **Hardware**
+   * The design of network, choice of building blocks depends very much upon targeted hardware for training and deployment.
+   * A low end hardware with limited GPU and memory will force use of less parameters, less accuracy, use of strides for convolution etc.
+   * For Example a system which does not require exact iamge detection or does not require high level of accuracy may settle for simple network with less accuracy.
+   
