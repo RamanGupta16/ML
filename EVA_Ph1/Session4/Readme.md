@@ -1,5 +1,11 @@
-The following architectural basics are building blocks to define DNN architecture. 
-They are applied in order to arrive at network architecture.
+**Session 4 Results Summary**
+* 1st DNN: 99.07% validation accuracy with 20,922 parameters. Plain Vanilla network.
+* 2nd DNN: 99.26% validation accuracy with 19,042 parameters. Increased BatchSize and number of Epochs.
+* 3rd DNN: 99.53% validation accuracy with 14,692 parameters. Added BatchNormalization and Dropout. Best Validation Accuracy.
+* 4th DNN: 99.43% validation accuracy with 9,424 parameters. Added LR scheduler. Most efficient in terms of parameters.
+
+**Archiectural Basics**
+The following architectural basics are building blocks to define DNN architecture. They are applied in order to arrive at network architecture.
 
 1. **How many layers**: 
   * One input layer
@@ -9,7 +15,7 @@ They are applied in order to arrive at network architecture.
     - Hardware constraints
     - Trainable parameters
     - Network Architecture.
-  * Output Layer
+  * One Output Layer
 
 2. **Receptive Field (RF)**
    * In CNN neuron is connected only to a local region of the previous layer which is defined as its receptive field. 
